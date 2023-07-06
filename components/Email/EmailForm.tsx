@@ -19,7 +19,9 @@ const EmailForm = () => {
   } = useForm<InputProps>();
   console.log(watch("name"));
 
-  const onSubmit: SubmitHandler<InputProps> = (data) => {};
+  const onSubmit: SubmitHandler<InputProps> = (data) => {
+    alert("disable button before success")
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

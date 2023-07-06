@@ -5,6 +5,8 @@ export default function Home() {
   return (
     <main className="">
       <EmailSection />
+
+      Sign our wall
     </main>
   );
 }
