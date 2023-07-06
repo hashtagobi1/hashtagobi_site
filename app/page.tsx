@@ -1,11 +1,10 @@
-import EmailForm from "@/components/Email/EmailForm";
-import EmailSignup from "@/components/Email/EmailSignup";
+import EmailSection from "@/components/Email/EmailSection";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="">
-      <EmailForm />
+      <EmailSection />
     </main>
   );
 }
