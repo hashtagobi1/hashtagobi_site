@@ -4,6 +4,7 @@ import React, { ReactNode } from "react";
 import { SocialIcon } from "react-social-icons";
 import AppleMusic from "../public/customIcons/applemusic.svg";
 import Image from "next/image";
+import Divider from "./Divider";
 
 type LinkType = {
   platform: string;
@@ -34,6 +35,7 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col justify-center items-center ">
+
       <ul className="flex gap-7 ">
         {links.map((link, i) => {
           return (
@@ -42,14 +44,14 @@ const Footer = () => {
                 {link.svg ? (
                   <Image
                     src={link.svg}
-                    width={`50`}
-                    height={`50`}
+                    width={`45`}
+                    height={`45`}
                     className=" border   rounded-full border-black"
                     alt={`icon for ${link.platform}`}
                   />
                 ) : (
                   <SocialIcon
-                    style={{ width: "50px", height: "50px" }}
+                    style={{ width: "45px", height: "45px" }}
                     fgColor="#000"
                     bgColor="#fff"
                     aria-label={`icon link for ${platform}`}
@@ -62,8 +64,8 @@ const Footer = () => {
           );
         })}
       </ul>
-      <p className="font-md mt-4">
-        &copy; obi + müb Entertainment {new Date().getFullYear()}{" "}
+      <p className="font-xs mt-4">
+        obi under müb Entertainment {new Date().getFullYear()} &copy;
       </p>
     </footer>
   );

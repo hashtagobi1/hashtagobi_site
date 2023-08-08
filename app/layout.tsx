@@ -1,11 +1,13 @@
 import Footer from "@/components/Footer";
 import "./globals.css";
-import { Courier_Prime } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import Nav from "@/components/NavBar/Nav";
 
-const CourierPrime = Courier_Prime({
+const InterImport = Inter({
   subsets: ["latin"],
   weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -20,9 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={CourierPrime.className}>
+      <body className={InterImport.className}>
         <Toaster />
+        <Nav />
         {children}
+        <div className="relative flex py-5 items-center">
+          <div className="justify-center items-center flex-grow border-t border-black"></div>
+        </div>
         <Footer />
       </body>
     </html>
