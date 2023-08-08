@@ -1,18 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
 
-const EmailSignup = () => {
-  const title = "obi Mailing List";
+const CTAs = () => {
+  const title = "Most Entertaining Rapper";
   return (
     <>
       <Head>
-        <title>obi Mailing List</title>
-        <meta property="og:title" content="obi mailing list" key={title} />
+        <title>Most Entertaining Rapper</title>
+        <meta
+          property="og:title"
+          content="Most Entertaining Rapper"
+          key={title}
+        />
       </Head>
       <main>
         <div className=" text-center flex justify-center  ">
           <Link
-            href={"https://untd.io/m/645d7fde508667570a08371e"}
+            href={
+              "https://www.gotobeat.com/gig/thursday-10-august-t-o-n-i-live-in-peckham/"
+            }
             className="cursor-pointer"
             passHref
           >
@@ -25,7 +31,7 @@ const EmailSignup = () => {
             className="cursor-pointer"
             passHref
           >
-            <button className="bg-white rounded-lg p-2 font-semibold mr-2 border-black border text-black">
+            <button className="bg-white  rounded-lg p-2 font-semibold mr-2 border-black border text-black">
               See obi live 🕺🏾
             </button>
           </Link>
@@ -35,4 +41,4 @@ const EmailSignup = () => {
   );
 };
 
-export default EmailSignup;
+export default CTAs;

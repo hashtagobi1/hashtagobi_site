@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import "./globals.css";
 import { Courier_Prime } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const CourierPrime = Courier_Prime({
   subsets: ["latin"],
@@ -8,8 +9,8 @@ const CourierPrime = Courier_Prime({
 });
 
 export const metadata = {
-  title: "Mailing List",
-  description: "obi's mailing list",
+  title: "Most Entertaining Rapper",
+  description: "Home Page",
 };
 
 export default function RootLayout({
@@ -19,8 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={CourierPrime.className}>{children}</body>
-      <Footer/>
+      <body className={CourierPrime.className}>
+        <Toaster />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

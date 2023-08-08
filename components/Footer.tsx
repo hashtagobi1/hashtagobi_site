@@ -36,10 +36,9 @@ const Footer = () => {
     <footer className="flex flex-col justify-center items-center ">
       <ul className="flex gap-7 ">
         {links.map((link, i) => {
-          console.log(link.svg);
           return (
-            <Link key={i} target="_blank" passHref href={link.url}>
-              <li className="">
+            <li key={i} className="">
+              <Link legacyBehavior target="_blank" passHref href={link.url}>
                 {link.svg ? (
                   <Image
                     src={link.svg}
@@ -58,8 +57,8 @@ const Footer = () => {
                     url={link.url}
                   />
                 )}
-              </li>
-            </Link>
+              </Link>
+            </li>
           );
         })}
       </ul>

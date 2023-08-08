@@ -1,14 +1,11 @@
 import React from "react";
-import EmailSignup from "./EmailSignup";
 import EmailForm from "./EmailForm";
+import CTAs from "../CTAs";
 
 const EmailSection = () => {
-
-
   return (
-    <div>
-      <EmailSignup />
-<EmailForm/>
+    <div className="">
+      <EmailForm />
     </div>
   );
 };
