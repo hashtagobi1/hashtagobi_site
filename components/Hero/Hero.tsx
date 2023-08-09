@@ -11,7 +11,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="max-w-lg">
+    <div className="max-w-sm">
       <div className="flex justify-between items-center">
         <Image src="/obi-logo.png" alt="logo" width="100" height="100" />
         <Image src="/mub-logo.png" alt="logo" width="100" height="100" />
@@ -63,9 +63,15 @@ const Hero = (props: Props) => {
         </h2>
         <Divider />
         <p className="mt-10">
-          listen to some music. subscribe to hear updates on the life of a
-          creative entrepreneur who&apos;s turning 1p into a £1,000,000 through
-          music.
+          listen to some{" "}
+          <Link
+            className="underline text-blue-600 font-semibold"
+            href={"/music"}
+          >
+            music
+          </Link>
+          . then subscribe to hear updates on the life of a creative
+          entrepreneur who&apos;s turning 1p into a £1,000,000 through music.
         </p>
       </div>
     </div>

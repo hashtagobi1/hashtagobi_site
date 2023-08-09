@@ -54,7 +54,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center ">
       <form
         className=" my-10 border border-gray-500 rounded-lg p-4  flex flex-col justify-center items-center "
         onSubmit={handleSubmit(onSubmit)}
@@ -63,7 +63,9 @@ const EmailForm = () => {
           <input type="hidden" name="tags" value="6549457" />
         </div>
 
-        <h2 className="font-bold text-lg">Mailing List 💌</h2>
+        <h2 className="font-bold text-lg underline-offset-2 underline">
+          Mailing List 💌
+        </h2>
 
         <div className="flex justify-center items-center flex-col p-8 gap-6">
           <div className="flex  mt-2 flex-col">

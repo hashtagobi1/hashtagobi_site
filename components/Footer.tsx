@@ -14,10 +14,10 @@ type LinkType = {
 
 const Footer = () => {
   const links: LinkType[] = [
-    // {
-    //   platform: "Spotify",
-    //   url: "https://open.spotify.com/album/0PXHig3xlW9A1ZXAVXqS5Z?si=WxAIPO1uRJ2PmiYZYd-3ew",
-    // },
+    {
+      platform: "Spotify",
+      url: "https://open.spotify.com/album/0PXHig3xlW9A1ZXAVXqS5Z?si=WxAIPO1uRJ2PmiYZYd-3ew",
+    },
     // {
     //   platform: "Apple Music",
     //   url: "https://music.apple.com/us/artist/obi/1190987687",
@@ -35,7 +35,6 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col justify-center items-center ">
-
       <ul className="flex gap-7 ">
         {links.map((link, i) => {
           return (
@@ -44,14 +43,14 @@ const Footer = () => {
                 {link.svg ? (
                   <Image
                     src={link.svg}
-                    width={`45`}
-                    height={`45`}
+                    width={`30`}
+                    height={`30`}
                     className=" border   rounded-full border-black"
                     alt={`icon for ${link.platform}`}
                   />
                 ) : (
                   <SocialIcon
-                    style={{ width: "45px", height: "45px" }}
+                    style={{ width: "30px", height: "30px" }}
                     fgColor="#000"
                     bgColor="#fff"
                     aria-label={`icon link for ${platform}`}
@@ -64,7 +63,7 @@ const Footer = () => {
           );
         })}
       </ul>
-      <p className="font-xs mt-4">
+      <p className="text-xs mt-4">
         obi under müb Entertainment {new Date().getFullYear()} &copy;
       </p>
     </footer>
