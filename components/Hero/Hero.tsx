@@ -42,7 +42,7 @@ const Hero = (props: Props) => {
         </p>
         <div className="flex justify-center mt-5">
           <Link
-            href={"https://untd.io/m/645d7fde508667570a08371e"}
+            href={"https://www.gotobeat.com/gig/thursday-10-august-t-o-n-i-live-in-peckham/"}
             className="cursor-pointer"
             passHref
           >
