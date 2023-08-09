@@ -4,11 +4,11 @@ export default function Music() {
   return (
     <div className="flex flex-col">
       <div className="p-6">
-        <h2 className="font-bold uppercase text-3xl text-center my-10">
+        <h2 className="font-bold uppercase text-3xl text-center mt-5">
           Singles
         </h2>
         <div className="musicHolder">
-          <div>
+          <div className="musicLink">
             <iframe
               src="https://open.spotify.com/embed/track/2nQwrsPslsOk6gctacZOof?utm_source=generator"
               width="100%"
@@ -18,7 +18,7 @@ export default function Music() {
               loading="lazy"
             ></iframe>
           </div>
-          <div>
+          <div className="musicLink">
             <iframe
               src="https://open.spotify.com/embed/track/4K6b23GUSrqYr6ehqVAUSy?utm_source=generator"
               width="100%"
@@ -28,7 +28,7 @@ export default function Music() {
               loading="lazy"
             ></iframe>
           </div>
-          <div>
+          <div className="musicLink">
             <iframe
               src="https://open.spotify.com/embed/track/1rqC7KwYqdeLCtpijqvwUs?utm_source=generator"
               width="100%"
@@ -41,11 +41,11 @@ export default function Music() {
         </div>
       </div>
       <div className="p-6">
-        <h2 className="font-bold uppercase text-3xl text-center my-10">
+        <h2 className="font-bold uppercase text-3xl text-center mt-5">
           EP&apos;s
         </h2>
         <div className="musicHolder">
-          <div>
+          <div className="musicLink">
             <iframe
               src="https://open.spotify.com/embed/album/7vf8DAscNscqoX4qIcORnl?utm_source=generator"
               width="100%"
@@ -55,7 +55,7 @@ export default function Music() {
               loading="lazy"
             ></iframe>
           </div>
-          <div>
+          <div className="musicLink">
             <iframe
               src="https://open.spotify.com/embed/album/5BVZ07TO7woH28wP9NKVvg?utm_source=generator"
               width="100%"
