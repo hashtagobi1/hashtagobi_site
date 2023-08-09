@@ -16,9 +16,9 @@ const Hero = (props: Props) => {
         <Image src="/obi-logo.png" alt="logo" width="100" height="100" />
         <Image src="/mub-logo.png" alt="logo" width="100" height="100" />
       </div>
-        <div className="relative flex py-5 items-center">
-          <div className="flex-grow border-t border-black"></div>
-        </div>
+      <div className="relative flex py-5 items-center">
+        <div className="flex-grow border-t border-black"></div>
+      </div>
       <div className="text-sm">
         <p className=" ">
           Hi. honestly i just needed a space to hold all my shit. gig dates, new
@@ -42,7 +42,9 @@ const Hero = (props: Props) => {
         </p>
         <div className="flex justify-center mt-5">
           <Link
-            href={"https://www.gotobeat.com/gig/thursday-10-august-t-o-n-i-live-in-peckham/"}
+            href={
+              "https://www.gotobeat.com/gig/thursday-10-august-t-o-n-i-live-in-peckham/"
+            }
             className="cursor-pointer"
             passHref
           >

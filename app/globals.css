@@ -5,3 +5,7 @@
 .navLink {
   @apply font-bold text-xl  hover:text-gray-900 transition-all duration-500 ease-in-out;
 }
+
+.musicHolder {
+  @apply  sm:flex gap-4 p-4 justify-center items-center;
+}
