@@ -43,14 +43,14 @@ const Footer = () => {
                 {link.svg ? (
                   <Image
                     src={link.svg}
-                    width={`30`}
-                    height={`30`}
+                    width={`40`}
+                    height={`40`}
                     className=" border   rounded-full border-black"
                     alt={`icon for ${link.platform}`}
                   />
                 ) : (
                   <SocialIcon
-                    style={{ width: "30px", height: "30px" }}
+                    style={{ width: "40px", height: "40px" }}
                     fgColor="#000"
                     bgColor="#fff"
                     aria-label={`icon link for ${platform}`}

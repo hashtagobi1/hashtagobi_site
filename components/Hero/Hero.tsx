@@ -11,7 +11,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="max-w-sm">
+    <div className="max-w-sm md:max-w-xl ">
       <div className="flex justify-between items-center">
         <Image src="/obi-logo.png" alt="logo" width="100" height="100" />
         <Image src="/mub-logo.png" alt="logo" width="100" height="100" />

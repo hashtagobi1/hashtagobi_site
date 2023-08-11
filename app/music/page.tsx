@@ -10,7 +10,7 @@ export default function Music() {
         <div className="musicHolder">
           <div className="musicLink">
             <iframe
-              src="https://open.spotify.com/embed/track/2nQwrsPslsOk6gctacZOof?utm_source=generator"
+              src="https://open.spotify.com/embed/track/4K6b23GUSrqYr6ehqVAUSy?utm_source=generator"
               width="100%"
               height="352"
               frameBorder="0"
@@ -20,7 +20,7 @@ export default function Music() {
           </div>
           <div className="musicLink">
             <iframe
-              src="https://open.spotify.com/embed/track/4K6b23GUSrqYr6ehqVAUSy?utm_source=generator"
+              src="https://open.spotify.com/embed/track/2nQwrsPslsOk6gctacZOof?utm_source=generator"
               width="100%"
               height="352"
               frameBorder="0"
