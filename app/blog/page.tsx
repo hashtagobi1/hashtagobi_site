@@ -35,10 +35,10 @@ export default function Blog() {
             />
           </div>
         </div>
-        <p className="text-center my-5">
+        <p className="text-center text-sm underline my-5">
           photos by{" "}
           <Link
-            className="font-bold"
+            className="font-bold "
             href={"https://instagram.com/dreslenses?igshid=MzRlODBiNWFlZA=="}
           >
             @dreslenses

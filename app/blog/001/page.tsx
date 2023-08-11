@@ -74,8 +74,7 @@ const NewGig = (props: Props) => {
             fucking p&rsquo;s).
           </p>
           <p className="mb-4">
-            Gonna sleep now so imma leave u all with a video from a new fan
-            tonight.
+            Gonna sleep now so imma leave u all with a vi 
           </p>
           <div className="my-4">
             <video controls src={"/blog/peckham/fan_new.MP4"} />
