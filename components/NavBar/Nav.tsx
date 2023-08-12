@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { ReactElement, SVGProps } from "react";
 import { usePathname } from "next/navigation";
 import {
   HomeIcon,
@@ -18,7 +18,7 @@ const Nav = (props: Props) => {
   const navLink = (
     linkName: string,
     link: string,
-    icon: React.SVGProps<SVGSVGElement>
+    icon: any
   ) => {
     return (
       <li>
@@ -29,7 +29,6 @@ const Nav = (props: Props) => {
           href={link}
         >
           <div className="flex flex-col items-center justify-center">
-            {/* // @ts-ignore */}
             {icon}
             {linkName}
           </div>
