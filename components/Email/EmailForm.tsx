@@ -54,7 +54,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-2xl ">
+    <div className="flex flex-col justify-center items-center p-4 max-w-2xl ">
       <form
         className=" my-10 border border-gray-500 rounded-lg p-4  flex flex-col justify-center items-center "
         onSubmit={handleSubmit(onSubmit)}

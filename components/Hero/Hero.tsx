@@ -11,7 +11,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="max-w-sm md:max-w-xl ">
+    <div className="max-w-sm md:max-w-2xl ">
       <div className="flex justify-between items-center">
         <Image src="/obi-logo.png" alt="logo" width="100" height="100" />
         <Image src="/mub-logo.png" alt="logo" width="100" height="100" />
@@ -42,14 +42,13 @@ const Hero = (props: Props) => {
         </p>
         <div className="flex justify-center mt-5">
           <Link
-            href={
-              "https://www.gotobeat.com/gig/thursday-10-august-t-o-n-i-live-in-peckham/"
-            }
+            href={"https://untd.io/r/ACTgLsmc8mKC/"}
+            target="_blank"
             className="cursor-pointer"
             passHref
           >
-            <button className="bg-black  rounded-lg p-2 font-semibold mr-2 border-black border text-white">
-              See obi live 🕺🏾
+            <button className="bg-white  rounded-lg p-3 font-semibold mr-2 border-black border text-black">
+              latest single 🎵
             </button>
           </Link>
         </div>

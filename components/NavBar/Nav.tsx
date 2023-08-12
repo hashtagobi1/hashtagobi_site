@@ -3,38 +3,51 @@
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
+import {
+  HomeIcon,
+  BuildingStorefrontIcon,
+  NewspaperIcon,
+  MusicalNoteIcon,
+} from "@heroicons/react/24/solid";
 
 type Props = {};
 
 const Nav = (props: Props) => {
   const currentRoute = usePathname();
+
+  const navLink = (
+    linkName: string,
+    link: string,
+    icon: React.SVGProps<SVGSVGElement>
+  ) => {
+    return (
+      <li>
+        <Link
+          className={`navLink  ${
+            currentRoute.includes(`${linkName}`) ? "font-bold text-black" : ""
+          }`}
+          href={link}
+        >
+          <div className="flex flex-col items-center justify-center">
+            {/* // @ts-ignore */}
+            {icon}
+            {linkName}
+          </div>
+        </Link>
+      </li>
+    );
+  };
   return (
     <nav className="">
       <ul className="flex p-10 text-gray-400  justify-center gap-6 items-center ">
-        <Link
-          className={`navLink ${
-            currentRoute === "/" ? "font-bold text-black" : ""
-          }`}
-          href={"/"}
-        >
-          <li>home</li>
-        </Link>
-        <Link
-          className={`navLink ${
-            currentRoute === "/music" ? "font-bold text-black" : ""
-          }`}
-          href={"/music"}
-        >
-          <li>music</li>
-        </Link>
-        <Link
-          className={`navLink ${
-            currentRoute.includes("blog") ? "font-bold text-black" : ""
-          }`}
-          href={"/blog"}
-        >
-          <li>blog</li>
-        </Link>
+        {navLink("home", "/", <HomeIcon width={20} />)}
+        {navLink("music", "/music", <MusicalNoteIcon width={20} />)}
+        {navLink("blog", "/blog", <NewspaperIcon width={20} />)}
+        {navLink(
+          "store",
+          "https://mub-stuff.myshopify.com",
+          <BuildingStorefrontIcon width={20} />
+        )}
         {/* <Link className="navLink" href={"/guestbook"}>
           <li>guestbook</li>
         </Link> */}

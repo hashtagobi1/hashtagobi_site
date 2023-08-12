@@ -4,7 +4,7 @@ import CTAs from "../CTAs";
 
 const EmailSection = () => {
   return (
-    <div className="">
+    <div className=" ">
       <EmailForm />
     </div>
   );
