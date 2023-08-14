@@ -77,14 +77,11 @@ export default async function Blog({ params }: Props) {
             posts:
           </h2>
 
-          <Link
-            className=" border border-black rounded-md max-w-md p-1"
-            href="/blog/001"
-          >
+          <Link className=" " href="/blog/001">
             <p className="cursor-pointer underline text-blue-600">
               playing guitar & rapping about FUPA in Peckham
             </p>
-            <p className="text-gray-600"> {views} views</p>
+            {/* <p className="text-gray-600"> {views} views</p> */}
           </Link>
         </div>
       </div>
