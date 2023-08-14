@@ -8,6 +8,7 @@ import {
   BuildingStorefrontIcon,
   NewspaperIcon,
   MusicalNoteIcon,
+  PencilIcon,
 } from "@heroicons/react/24/solid";
 
 type Props = {};
@@ -15,11 +16,7 @@ type Props = {};
 const Nav = (props: Props) => {
   const currentRoute = usePathname();
 
-  const navLink = (
-    linkName: string,
-    link: string,
-    icon: any
-  ) => {
+  const navLink = (linkName: string, link: string, icon: any) => {
     return (
       <li>
         <Link
@@ -37,16 +34,17 @@ const Nav = (props: Props) => {
     );
   };
   return (
-    <nav className="">
-      <ul className="flex p-10 text-gray-400  justify-center gap-6 items-center ">
-        {navLink("home", "/", <HomeIcon width={20} />)}
-        {navLink("music", "/music", <MusicalNoteIcon width={20} />)}
-        {navLink("blog", "/blog", <NewspaperIcon width={20} />)}
+    <nav className="mb-3 ">
+      <ul className="flex p-10 text-gray-400  justify-center gap-10 items-center ">
+        {navLink("home", "/", <HomeIcon width={30} />)}
+        {navLink("music", "/music", <MusicalNoteIcon width={30} />)}
+        {navLink("blog", "/blog", <NewspaperIcon width={30} />)}
         {navLink(
           "store",
           "https://mub-stuff.myshopify.com",
-          <BuildingStorefrontIcon width={20} />
+          <BuildingStorefrontIcon width={30} />
         )}
+        {/* {navLink("guestbook", "/guestbook", <PencilIcon width={30} />)} */}
         {/* <Link className="navLink" href={"/guestbook"}>
           <li>guestbook</li>
         </Link> */}
