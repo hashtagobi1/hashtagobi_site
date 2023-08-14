@@ -1,9 +1,8 @@
 import EmailForm from "@/components/Email/EmailForm";
 import Image from "next/image";
 import React from "react";
-type Props = {};
 
-const NewGig = (props: Props) => {
+const NewGig = async () => {
   return (
     <div className="flex flex-col justify-center text-center items-center p-4 ">
       <div className=" max-w-2xl gap-6 border border-black p-4 rounded-lg">
@@ -73,9 +72,7 @@ const NewGig = (props: Props) => {
             promoters who owe me money whilst reading this &mdash; transfer my
             fucking p&rsquo;s).
           </p>
-          <p className="mb-4">
-            Gonna sleep now so imma leave u all with a vi 
-          </p>
+          <p className="mb-4">Gonna sleep now so imma leave u all with a vi</p>
           <div className="my-4">
             <video controls src={"/blog/peckham/fan_new.MP4"} />
           </div>
