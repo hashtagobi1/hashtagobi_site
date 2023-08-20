@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
       <div className="relative flex py-5 items-center">
         <div className="flex-grow border-t border-black"></div>
       </div>
-      <div className="text-sm">
+      <div className="text-sm md:text-lg">
         <p className=" ">
           Hi. honestly i just needed a space to hold all my shit. gig dates, new
           music, photos from shows, life updates in the form of a blog.

@@ -11,7 +11,7 @@ const InterImport = Inter({
 });
 
 export const metadata = {
-  title: "Most Entertaining Rapper",
+  title: "Most Entertaining Rapper in the UK 🇬🇧",
   description: "Home Page",
 };
 

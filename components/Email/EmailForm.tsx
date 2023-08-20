@@ -69,7 +69,7 @@ const EmailForm = () => {
 
         <p>
           sign up to receive updates from the UK&apos;s Most Entertaining
-          Rapper. merch. videos. blog posts. photos.
+          Rapper. merch. videos. blog posts. photos. films. etc. etc.
         </p>
 
         <div className="flex justify-center items-center flex-col p-8 gap-6">

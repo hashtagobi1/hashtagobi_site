@@ -63,7 +63,7 @@ const Footer = () => {
           );
         })}
       </ul>
-      <p className="text-xs mt-4">
+      <p className="text-sm md:text-md mt-4">
         obi under müb Entertainment {new Date().getFullYear()} &copy;
       </p>
     </footer>

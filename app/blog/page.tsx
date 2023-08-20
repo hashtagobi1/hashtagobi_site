@@ -6,24 +6,9 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { Redis } from "@upstash/redis";
 
-export const revalidate = 60;
-const redis = Redis.fromEnv();
-
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
-export default async function Blog({ params }: Props) {
-  const views =
-    (await redis.get<number>(
-      ["pageviews", "projects", params.slug].join(":")
-    )) ?? 0;
-
+export default async function Blog() {
   return (
     <div className="flex flex-col justify-center items-center ">
-      <ReportView slug={params.slug} />
       <h2 className="text-center font-bold my-10">A blog by obi</h2>
       <div className="  ">
         <div className="flex gap-6 p-3">
@@ -52,7 +37,7 @@ export default async function Blog({ params }: Props) {
             />
           </div>
         </div>
-        <p className="text-center text-sm underline my-5">
+        <p className="text-center  text-sm underline my-5">
           photos by{" "}
           <Link
             className="font-bold "
@@ -72,16 +57,20 @@ export default async function Blog({ params }: Props) {
           </Link>
         </p>
         <Divider />
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col gap-5 text-center">
           <h2 className="font-bold text-3xl flex-col text-center mb-8">
             posts:
           </h2>
 
+          <Link className=" " href="/blog/002">
+            <p className="cursor-pointer underline text-md md:text-lg text-blue-600">
+              Money Dey at Sony Music HQ?...
+            </p>
+          </Link>
           <Link className=" " href="/blog/001">
-            <p className="cursor-pointer underline text-blue-600">
+            <p className="cursor-pointer underline text-md md:text-lg text-blue-600">
               playing guitar & rapping about FUPA in Peckham
             </p>
-            {/* <p className="text-gray-600"> {views} views</p> */}
           </Link>
         </div>
       </div>

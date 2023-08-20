@@ -6,10 +6,10 @@ const CTAs = () => {
   return (
     <>
       <Head>
-        <title>Most Entertaining Rapper</title>
+        <title>Most Entertaining Rapper in the UK 🇬🇧</title>
         <meta
           property="og:title"
-          content="Most Entertaining Rapper"
+          content="Most Entertaining Rapper in the UK 🇬🇧"
           key={title}
         />
       </Head>

@@ -1,20 +1,23 @@
+import BlogHeading from "@/components/Blog/BlogHeading";
 import EmailForm from "@/components/Email/EmailForm";
 import Image from "next/image";
 import React from "react";
 
-const NewGig = async () => {
+export type ParamProps = {
+  params: {
+    slug: string;
+  };
+};
+
+const NewGig = async ({ params }: ParamProps) => {
   return (
     <div className="flex flex-col justify-center text-center items-center p-4 ">
       <div className=" max-w-2xl gap-6 border border-black p-4 rounded-lg">
-        <div>
-          <h2 className="text-lg font-bold mt-8 mb-2">
-            playing guitar & rapping about FUPA in Peckham
-          </h2>
-          <p className="italic">
-            written by obi <span className="opacity-50">obviously</span>
-          </p>
-          <p className="mt-2 font-light">00:37am, Fri 11th Aug</p>
-        </div>
+        <BlogHeading
+          title="playing guitar & rapping about FUPA in Peckham"
+          date={new Date("Friday August 11, 2023 00:37:00")}
+          params={params}
+        />
         <div className="mt-10">
           <p className="mb-4">
             As I write this, I was panicking, screaming &ldquo;FUCK!
