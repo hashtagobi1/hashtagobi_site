@@ -21,15 +21,13 @@ const BlogHeading = async ({ title, date, params }: Props) => {
       {/* <p className="text-gray-600"> {views} views</p> */}
       <h2
         className="text-4xl 
-      text-transparent
-      bg-clip-text
-      bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
       underline font-bold mt-8 mb-2"
       >
         {title}
       </h2>
       <p className="">
-        written by obi <span className=" italic opacity-50">obviously</span>
+        written by obi{" "}
+        <span className=" italic opacity-25">{"(obviously)"}</span>
       </p>
       <p className="mt-2 font-light">
         posted on{" "}

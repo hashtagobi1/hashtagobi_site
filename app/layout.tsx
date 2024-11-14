@@ -29,7 +29,7 @@ export default async function RootLayout({
         <div className="relative flex py-5 items-center">
           <div className="justify-center items-center flex-grow border-t border-black"></div>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

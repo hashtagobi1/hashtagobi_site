@@ -14,7 +14,7 @@ export default async function Blog() {
         <div className="flex gap-6 p-3">
           <div>
             <Image
-              src="/blog/left.JPG"
+              src="/blog/left.jpg"
               alt="blog image"
               width={500}
               height={600}
@@ -22,7 +22,7 @@ export default async function Blog() {
           </div>
           <div>
             <Image
-              src="/testimonials/main.JPG"
+              src="/blog/middle.jpg"
               alt="blog image"
               width={500}
               height={600}
@@ -30,7 +30,7 @@ export default async function Blog() {
           </div>
           <div>
             <Image
-              src="/blog/right.JPG"
+              src="/blog/right.jpg"
               alt="blog image"
               width={500}
               height={600}
@@ -41,9 +41,11 @@ export default async function Blog() {
           photos by{" "}
           <Link
             className="font-bold "
-            href={"https://instagram.com/dreslenses?igshid=MzRlODBiNWFlZA=="}
+            href={
+              "https://www.instagram.com/koice.media?igsh=MWNxeHFxaDF0MWd5aQ=="
+            }
           >
-            @dreslenses
+            @koice.media
             {/* <span>
               <SocialIcon
                 style={{ width: "40px", height: "40px" }}
@@ -62,6 +64,11 @@ export default async function Blog() {
             posts:
           </h2>
 
+          <Link className=" " href="/blog/birthday">
+            <p className="cursor-pointer underline text-md md:text-lg text-blue-600">
+              4th Birthday
+            </p>
+          </Link>
           <Link className=" " href="/blog/002">
             <p className="cursor-pointer underline text-md md:text-lg text-blue-600">
               Money Dey at Sony Music HQ?...

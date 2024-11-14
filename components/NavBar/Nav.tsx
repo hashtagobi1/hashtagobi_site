@@ -41,7 +41,7 @@ const Nav = (props: Props) => {
         {navLink("blog", "/blog", <NewspaperIcon width={30} />)}
         {navLink(
           "store",
-          "https://mub-stuff.myshopify.com",
+          "https://mangotfiredinnit.com",
           <BuildingStorefrontIcon width={30} />
         )}
         {/* {navLink("guestbook", "/guestbook", <PencilIcon width={30} />)} */}
